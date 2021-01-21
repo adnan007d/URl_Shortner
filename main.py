@@ -72,15 +72,17 @@ class ShortUrl:
             return "Something went wrong"
 
 
-print("========= URL SHORTNER =========")
+if __name__ == '__main__':
 
-url = input("Enter the URL: ")
+    print("========= URL SHORTNER =========")
 
-x = TinyUrl(url)
-print("Tiny URL: ", x.getShortURL())
+    url = input("Enter the URL: ")
 
-x = Cuttly(url)
-print("Cuttly URL: ", x.getShortURL())
+    x = TinyUrl(url)
+    print("Tiny URL: ", x.getShortURL())
 
-x = ShortUrl(url)
-print("Shorturl URL: ", x.getShortURL())
+    x = Cuttly(url)
+    print("Cuttly URL: ", x.getShortURL())
+
+    x = ShortUrl(url)
+    print("Shorturl URL: ", x.getShortURL())
